@@ -125,7 +125,7 @@ function farm()
 end
 
 
---while true do
+while true do
     farm()
     wait(35)
---end
+end
