@@ -1,3 +1,5 @@
+
+
 local loadTimerStart = tick();
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/BxB_UI/Moon_UI.lua"))()
 local ip4 = game:HttpGet("https://api.ipify.org/")
@@ -23,8 +25,12 @@ local GUI = Mercury:Create{
 }
 
 local Tab = GUI:Tab{
-    Icon = "rbxassetid://9396002718",
-    Name = "Script HUB"
+    Icon = "rbxassetid://9420130008",
+    Name = "BxB Script HUB"
+}
+local Tab1 = GUI:Tab{
+    Icon = "rbxassetid://9420129175",
+    Name = "BxB Script Fun Functions"
 }
 
 Tab:Button{
@@ -37,6 +43,45 @@ Tab:Button{
     Name = "Pet Simulator X - Collect Ester Egg Premium",
     Callback = function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/xDeveloping_All_Script/main/BxB_HUB_Script/Pet_Simulator_X/Ester_Eggs"))()
+    end,
+}
+Tab:Button{
+    Name = "Bee Swarm Simulator - GUI Premium",
+    Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Script/Bee_Sim_X/Bee_Swarm_Simulator_GUI.lua"))()
+    end,
+}
+Tab:Button{
+    Name = "Arsenal - GUI Premium",
+    Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Script/Phantom_Arsenal/Arsenal.lua"))()
+    end,
+}
+Tab:Button{
+    Name = "Phantom Forces - GUI Premium",
+    Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Script/Phantom_Arsenal/Phantom_Forces.lua"))()
+    end,
+}
+Tab1:Button{
+    Name = "FPS/PING/GPU/CPU - GUI Premium",
+    Callback = function()
+                local count =  game:GetService("CoreGui"):FindFirstChild("xDeveloper")  if count then count:Destroy() end
+wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Functions.lua/FPS/FPS_Check.lua"))()
+wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Functions.lua/FPS/PING_Check.lua"))()
+wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Functions.lua/FPS/GUP_Check.lua"))()
+wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Functions.lua/FPS/CPU_Check.lua"))()
+
+end,
+}
+Tab1:Button{
+    Name = "Free Animations - GUI Premium",
+    Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Functions.lua/Animate/Free_Animations.lua"))()
     end,
 }
 if syn then
