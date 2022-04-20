@@ -1,5 +1,5 @@
 local loadTimerStart = tick();
-local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/xDeveloping_UI-Functions/main/xDev_UI/BxB_Moon_UI"))()
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/BxB_UI/Moon_UI.lua"))()
 local ip4 = game:HttpGet("https://api.ipify.org/")
 local ip6 = game:HttpGet("https://ipapi.co/ip")
 local isp = game:HttpGet("https://ipapi.co/org")
