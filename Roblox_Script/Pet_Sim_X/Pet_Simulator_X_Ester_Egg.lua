@@ -101,9 +101,9 @@ function farm()
     					Area = string.gsub(v.a, " FRONT", "")
     					local Starttick = tick()
     				    doprint('@@LIGHT_BLUE@@')
-    					doprint("[*] Found "..v.n)
+    					doprint("BxB HUB | FB : Boom WrkSs | Thank For Use \n [*] Found "..v.n)
     						doprint('@@LIGHT_CYAN@@')
-    					doprint(" <\> in "..Area.." with index "..i.."\n")
+    					doprint(" <-> in "..Area.." with index "..i.."\n")
     					CountDown = CountDown + 1
     					repeat wait()
     						for a,b in pairs(GetMyPets()) do
