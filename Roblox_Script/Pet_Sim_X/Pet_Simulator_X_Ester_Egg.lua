@@ -100,8 +100,10 @@ function farm()
     				if string.find(v.n, "Easter Egg") then
     					Area = string.gsub(v.a, " FRONT", "")
     					local Starttick = tick()
-    				    doprint('@@LIGHT_BLUE@@')
-    					doprint("BxB HUB | FB : Boom WrkSs | Thank For Use \n [*] Found "..v.n)
+    				    doprint('@@GREEN@@')
+    					doprint("BxB HUB | FB : Boom WrkSs | Thank For Use \n")
+						doprint('@@LIGHT_CYAN@@')
+    					doprint(" [*] Found "..v.n)
     						doprint('@@LIGHT_CYAN@@')
     					doprint(" <-> in "..Area.." with index "..i.."\n")
     					CountDown = CountDown + 1
