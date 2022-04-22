@@ -923,15 +923,15 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "Player Info", Description = "Credit FB : Boom WrkSs"}
 	creditsTab:credit{Name = "Player Name", Description = "DisplayName  "..game.Players.LocalPlayer.DisplayName.."    :    @"..game.game.Players.LocalPlayer.Name}
-	creditsTab:credit{Name = "Account Info", Description = "Account Age "..game.Players.LocalPlayer.AccountAge.." Days   :   User ID "..game.Players.LocalPlayer.UserId}
+	creditsTab:credit{Name = "Account Info", Description = "Account Age "..game.Players.LocalPlayer.AccountAge.." Days"}
 	
 
 	return mt
 end
 
 function Library:notification(options)
-	options = self:set_defaults({
-		Title = "Notification",
+	options = self:set_defaults({0
+		Title = "Notification",1+
 		Text = "Your character has been reset.",
 		Duration = 3,
 		Callback = function() end
