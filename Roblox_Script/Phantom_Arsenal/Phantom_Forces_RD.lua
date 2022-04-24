@@ -1,4 +1,4 @@
-local windows = loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/BxB_UI/AD_UI.lua""))()
+local windows = loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/BxB_UI/AD_UI.lua"))()
 local win = windows:Create({
     Title = "BxB HUB",
     Game = "Phantom Forces!"
