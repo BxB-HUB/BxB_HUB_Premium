@@ -31,6 +31,14 @@ local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
+		BxB = {
+			Main = Color3.fromRGB(35, 35, 35),
+			Secondary = Color3.fromRGB(50, 50, 50),
+			Tertiary = Color3.fromRGB(0, 255, 255),
+
+			StrongText = Color3.fromHSV(0, 0, 1),        
+			WeakText = Color3.fromHSV(0, 0, 172/255)
+		},
 		Legacy = {
 			Main = Color3.fromHSV(262/360, 60/255, 34/255),
 			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
@@ -55,14 +63,6 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Rust = {
-			Main = Color3.fromRGB(37, 35, 33),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(237, 94, 38),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
 		Aqua = {
 			Main = Color3.fromRGB(19, 21, 21),
 			Secondary = Color3.fromRGB(65, 63, 63),
@@ -71,14 +71,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),        
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		BxB = {
-			Main = Color3.fromRGB(35, 35, 35),
-			Secondary = Color3.fromRGB(50, 50, 50),
-			Tertiary = Color3.fromRGB(0, 255, 255),
-
-			StrongText = Color3.fromHSV(0, 0, 1),        
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
+		
 		Vaporwave = {},
 		OperaGX = {},
 		VisualStudio = {}
