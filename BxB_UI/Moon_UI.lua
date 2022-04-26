@@ -343,7 +343,7 @@ function Library:object(class, properties)
 	})
 end
 
-function Library:show(state)
+function :show(state)
 	self.Toggled = state
 	self.mainFrame.ClipsDescendants = true
 	if state then
@@ -639,7 +639,8 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "BxB HUB | "..info.Name,
+		Text = "BxB HUB    |   <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. info.Name .. "</b> </font>",
+        
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -900,8 +901,6 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Boom WrkSs", Description = "UI Library Developer", Discord = "[ ブーム ]#4134", Facebook = "Boom WrkSs"}
-	
 
 	return mt
 end
