@@ -639,7 +639,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "BxB HUB    |   <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. info.Name .. "</b> </font>",
+		Text = "BxB HUB    |   ".. info.Name,
         
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
@@ -900,7 +900,6 @@ function Library:create(options)
 	})
 
 	rawset(mt, "creditsContainer", creditsTab.container)
-
 
 	return mt
 end
@@ -1356,7 +1355,7 @@ function Library:toggle(options)
 		end)
 
 		UserInputService.InputEnded:connect(function(key)
-			if key.UserInputType == Enum.UserInputType.MouseButton1 then
+			if key.UserType == Enum.UserInputType.MouseButton1 then
 				toggleContainer:tween{BackgroundColor3 = (hovered and self:lighten(Library.CurrentTheme.Secondary)) or Library.CurrentTheme.Secondary}
 			end
 		end)
@@ -1578,7 +1577,7 @@ function Library:dropdown(options)
 			dropdownContainer:tween{BackgroundColor3 = self:lighten(Library.CurrentTheme.Secondary, 20)}
 		end)
 
-		UserInputService.InputEnded:connect(function(key)
+		UserInputService.Ended:connect(function(key)
 			if key.UserInputType == Enum.UserInputType.MouseButton1 then
 				dropdownContainer:tween{BackgroundColor3 = (hovered and self:lighten(Library.CurrentTheme.Secondary)) or Library.CurrentTheme.Secondary}
 			end
