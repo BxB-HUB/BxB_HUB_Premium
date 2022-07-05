@@ -58,4 +58,4 @@ _G.Settings = {
     Autoraid = false,
     kickrejoin = false
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Besty191/MAZI/main/Anime%20Dimensions%20Simulator%20%7C%20Sun%20Hub"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BxB-HUB/BxB_HUB_Premium/main/Roblox_Script/Anime_Dimensions_Simulator/ADS.lua"))()
